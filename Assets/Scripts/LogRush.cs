@@ -78,12 +78,13 @@ public class LogRush : MonoBehaviour
             Vector3 pos = cubes[i].transform.localPosition;
             pos.x = cubes[0].transform.localPosition.x;
             cubes[i].transform.DOLocalMove(pos, 0.70f);
+            
         }
     }
 
-    public void delete(int dex)
+    public void Delete(int dex)
     {
-        Destroy(cubes[dex]);
+        Destroy(cubes[dex], 0.3f);
         cubes.RemoveAt(dex);
         Debug.Log(dex);
     }

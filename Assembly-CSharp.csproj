@@ -67,6 +67,8 @@
     <Compile Include="Assets\Scripts\Collision.cs" />
     <Compile Include="Assets\Scripts\LogRush.cs" />
     <Compile Include="Assets\Scripts\MovementCu.cs" />
+    <Compile Include="Assets\Scripts\PunchObstacle.cs" />
+    <Compile Include="Assets\Scripts\TransformObject.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

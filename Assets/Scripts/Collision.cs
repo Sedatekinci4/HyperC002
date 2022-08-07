@@ -30,16 +30,21 @@ public class Collision : MonoBehaviour
             {
                 other.gameObject.tag = "Untagged";
                 index = gameObject.transform.GetSiblingIndex();
-                Debug.Log(index);
+                //Debug.Log(index);
                 x = LogRush.instance.cubes.Count;
-                Debug.Log(x);
-                for (int i = index; i < x; i++)
+                //Debug.Log(x);
+
+                for (int i = 1; index < x; index++)
                 {
-                    LogRush.instance.delete(i);
-                    i--;
+                    LogRush.instance.Delete(index);
+                    index--;
                 }
-               
+
             }
+        }
+        if (other.gameObject.CompareTag("Purple"))
+        {
+            gameObject.GetComponent<MeshRenderer>().material.color = Color.green;
         }
     }
 }

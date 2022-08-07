@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cube
   - Obstacle
+  - Purple
   layers:
   - Default
   - TransparentFX
